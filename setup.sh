@@ -36,8 +36,6 @@ prompt_install vlc
 prompt_install ubuntu-restricted-extras
 prompt_install chromium-browser
 prompt_install git 
-prompt_install pepperflashplugin-nonfree
-prompt_install flashplugin-installer
 prompt_exec  'go to chrome web page' "sudo -u joel chromium-browser https://www.google.com/chrome/browser/desktop/"
 # 1. Add the Spotify repository signing key to be able to verify downloaded packages
 prompt_exec  'add spotiy repository key'  " apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 94558F59 D2C19886"
@@ -47,6 +45,7 @@ prompt_exec  'install spotify' " apt update&& apt-get install spotify-client"
 prompt_install git
 promp_exec 'configure git email and name?' 'git config --global user.email "joel-hutton@hotmail.com" && git config --global user.name "Joel Hutton"'
 prompt_install xclip 
+prompt_install xsel 
 prompt_install thunderbird
 prompt_install thunderbird-gnome-support
 prompt_exec 'get joels rc files from git?' 'cd /home/joel && git clone https://github.com/JoelHutton/vimrc.git && cd vimrc && ./setup.sh && cd .. && git clone https://github.com/JoelHutton/bashrc.git && cd bashrc && ./setup'
