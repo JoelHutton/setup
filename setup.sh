@@ -26,3 +26,5 @@ mkdir -p /home/joel/git && cd /home/joel/git && git clone https://github.com/Joe
 sed -i -e 's/google-chrome-stable/google-chrome-stable\ --incognito/g' /usr/share/applications/google-chrome.desktop
 #change default editor
 sudo update-alternatives --config editor
+google-chrome-stable  https://www.privateinternetaccess.com/installer/download_installer_linux
+
