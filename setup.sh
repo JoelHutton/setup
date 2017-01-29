@@ -17,6 +17,8 @@ apt-get install -y git
 git config --global user.email "joel-hutton@hotmail.com" && git config --global user.name
 apt-get install -y xclip 
 apt-get install -y xsel 
+apt-get install -y arduino
+apt-get install -y tlp
 apt-get install -y zsh
 chsh -s /usr/bin/zsh
 #get rc files from git?
