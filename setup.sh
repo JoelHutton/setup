@@ -23,5 +23,6 @@ apt-get install -y zsh
 chsh -s /usr/bin/zsh
 #get rc files from git?
 mkdir -p /home/joel/git && cd /home/joel/git && git clone https://github.com/JoelHutton/vimrc.git && cd vimrc && ./setup.sh && cd .. && git clone https://github.com/JoelHutton/bashrc.git && cd bashrc && ./setup && cd .. && git clone https://github.com/JoelHutton/zshrc.git && cd zshrc && ./setup.sh
+sed -i -e 's/google-chrome-stable/google-chrome-stable\ --incognito/g' /usr/share/applications/google-chrome.desktop
 #change default editor
 sudo update-alternatives --config editor
