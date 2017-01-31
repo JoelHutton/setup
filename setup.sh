@@ -27,4 +27,14 @@ sed -i -e 's/google-chrome-stable/google-chrome-stable\ --incognito/g' /usr/shar
 #change default editor
 sudo update-alternatives --config editor
 google-chrome-stable  https://www.privateinternetaccess.com/installer/download_installer_linux
+cp BCM20702A1-0a5c-216f.hcd /lib/firmware/brcm/
+echo '[Re-enable hibernate by default for login1]
+  Identity=unix-user:*
+  Action=org.freedesktop.login1.hibernate
+  ResultActive=yes
 
+[Re-enable hibernate for multiple users by default in logind]
+  Identity=unix-user:*
+  Action=org.freedesktop.login1.hibernate-multiple-sessions
+  ResultActive=yes' > /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+killall unity-panel-service
