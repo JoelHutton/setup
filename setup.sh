@@ -12,14 +12,14 @@ apt-get install -y vim-gnome
 apt-get install -y skype
 apt-get install -y vlc
 apt-get install -y ubuntu-restricted-extras
-#apt-get install chromium-browser
+apt-get install chromium-browser
 apt-get install -y git 
 #go to download chrome page
 #sudo -u joel chromium-browser https://www.google.com/chrome/browser/desktop/
 #configure git email and name?
 git config --global user.email "joel-hutton@hotmail.com" && git config --global user.name
-apt-get install -y xclip 
-apt-get install -y xsel 
+apt-get install -y xclip
+apt-get install -y xsel
 apt-get install -y arduino
 apt-get install -y tlp
 apt-get install -y zsh
@@ -35,10 +35,14 @@ sudo apt-get install spotify-client
 #get rc files from git
 git clone https://github.com/JoelHutton/vimrc.git
 git clone https://github.com/JoelHutton/zshrc.git
+#to make mouse thumb button explode windows
 #xbindkeys, you will need to change explode shortcut to ctrl \
+#to get keycodes use xev, to send them to the OS use xte
 sudo apt install xbindkeys
 sudo apt install xautomation
 cp xbindkeysrc $HOME/.xbindkeysrc
+sudo apt install unity-tweak-tool && unity-tweak-tool
+sudo apt install libssl-dev
 #make chrome always start in incognito
 sed -i -e 's/google-chrome-stable/google-chrome-stable\ --incognito/g' /usr/share/applications/google-chrome.desktop
 #change default editor
