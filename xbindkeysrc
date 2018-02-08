@@ -67,6 +67,9 @@
 
 "xte 'keydown Control_L' && sleep 0.2 && xte 'key 0x5c' && xte 'keyup Control_L'"
 b:10
+
+"gnome-screensaver-command -l"
+c:104
 ##################################
 # End of xbindkeys configuration #
 ##################################
