@@ -1,0 +1,12 @@
+change keyboard to dvorak
+change sidebar to autohide
+install git
+download git/scripts: git clone http://www.github.com/JoelHutton/setup.git
+run stuff from setup/get rc files
+swap caps lock and escape (in gnome tweaks)
+change explode windows to Ctrl + \
+new terminals open in tabs
+terminal scrollback is bignumber 10,000,000
+change luks password (arm laptop): sudo lukspwd
+install hexchat + copy over configuration (~/.config/hexchat)
+ssh-keygen and add new public key to gerrit (arm laptop)
