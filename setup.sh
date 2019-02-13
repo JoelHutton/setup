@@ -57,5 +57,6 @@ cond_echo "mkdir $HOME/git/dotfiles && git clone http://github.com/joelhutton/do
 cond_echo "$HOME/dotfiles/setup.sh"
 cond_echo "mkdir $HOME/git/scripts && git clone http://github.com/joelhutton/scripts $HOME/git/scripts"
 cond_echo "gnome-tweak-tool" "open gnome tweak tool to swap caps and escape"
+cond_echo "firefox https://www.privateinternetaccess.com/installer/x/download_installer_linux" "get pia vpn"
 
 chmod +x gen.sh
