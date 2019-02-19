@@ -47,6 +47,7 @@ cond_echo "sudo apt install -y gcc"
 cond_echo "sudo apt install -y make"
 cond_echo "sudo apt install -y zsh"
 cond_echo "sudo apt install -y tmux"
+cond_echo "sudo apt install -y xbindkeys"
 cond_echo "snap install spotify"
 #configure git email and name?
 cond_echo "git config --global user.email 'JAH1809@gmail.com' && git config --global user.name joel"
