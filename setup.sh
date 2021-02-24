@@ -63,6 +63,6 @@ cond_echo "mkdir $HOME/git/scripts && git clone http://github.com/joelhutton/scr
 cond_echo "gnome-tweak-tool" "open gnome tweak tool to swap caps and escape"
 cond_echo "firefox https://www.privateinternetaccess.com/installer/x/download_installer_linux" "get pia vpn"
 cond_echo "ssh-keygen" "generate ssh key?"
-cond echo "mkdir ~/wireguard && wg genkey | tee ~/wireguard/privatekey | wg pubkey > ~/wireguard/publickey" "generate wireguard keys?"
+cond_echo "mkdir ~/wireguard && wg genkey | tee ~/wireguard/privatekey | wg pubkey > ~/wireguard/publickey" "generate wireguard keys?"
 
 chmod +x gen.sh
