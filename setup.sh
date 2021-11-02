@@ -14,21 +14,6 @@ rm gen.sh
 echo "set -x" > gen.sh
 cond_echo "sudo apt update"
 cond_echo "sudo apt upgrade"
-	
-read -p "XPS 13:'$1' [Y/n]"
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-	#xps 13 specific
-	cond_echo "dpkg -i dkms_2.2.0.3-2ubuntu3_all.deb" "xps 13 drivers"
-	cond_echo "sudo cp BCM20702A1-0a5c-216f.hcd /lib/firmware/brcm/ && sudo chmod 0644 /lib/firmware/brcm/BCM20702A1-0a5c-216f.hcd" "xps 13 firmware"
-fi
-
-read -p "XPS 15:'$1' [Y/n]"
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-	cond_echo "sudo cp BCM20702A1-0a5c-216f.hcd /lib/firmware/brcm/ && sudo chmod 0644 /lib/firmware/brcm/BCM20702A1-0a5c-216f.hcd" "xps 15 firmware"
-
-fi
 
 #install some useful programs
 cond_echo "sudo apt install -y vim-gnome"
