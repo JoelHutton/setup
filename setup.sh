@@ -42,9 +42,9 @@ cond_echo "git config --global user.email 'JAH1809@gmail.com' && git config --gl
 cond_echo "update-alternatives --config editor"
 
 cond_echo "mkdir $HOME/git/dotfiles"
-cond_echo "mkdir $HOME/git/dotfiles && git clone http://github.com/joelhutton/dotfiles $HOME/git/dotfiles"
+cond_echo "mkdir $HOME/git/dotfiles && git clone ssh://git@github.com/joelhutton/dotfiles $HOME/git/dotfiles"
 cond_echo "$HOME/dotfiles/setup.sh"
-cond_echo "mkdir $HOME/git/scripts && git clone http://github.com/joelhutton/scripts $HOME/git/scripts"
+cond_echo "mkdir $HOME/git/scripts && git clone ssh://git@github.com/joelhutton/scripts $HOME/git/scripts"
 cond_echo "gnome-tweak-tool" "open gnome tweak tool to swap caps and escape"
 cond_echo "firefox https://www.privateinternetaccess.com/installer/x/download_installer_linux" "get pia vpn"
 cond_echo "ssh-keygen" "generate ssh key?"
