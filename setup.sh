@@ -17,7 +17,6 @@ cond_echo "sudo apt upgrade"
 
 #install some useful programs
 cond_echo "sudo apt install -y vim-gnome"
-cond_echo "sudo apt install -y skype"
 cond_echo "sudo apt install -y vlc"
 cond_echo "sudo apt install -y xsel"
 cond_echo "sudo apt install -y gparted"
